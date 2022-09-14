@@ -32,3 +32,6 @@
   - There is no improvement in accuracy but we can definitely see the overfitting problem has solved due to data augmentation.
   - We can increase the epochs to increase the accuracy so it's too early for judgement.
 - Final findings on the rectified class imbalance data
+
+## Acknowledgements
+- Thank to Google Colab by using on GPU runtime.
