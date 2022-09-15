@@ -17,20 +17,22 @@
 ## Technologies Used
 - Build a multiclass classification model using a custom convolutional neural network in TensorFlow. 
 - Create train & validation dataset from the train directory with a batch size of 32. Also, make sure you resize your images to 180*180.
-- Train the model for ~20 epochs.
-- Chose an appropriate data augmentation strategy to resolve underfitting/overfitting.
+- Train the first model for ~20 epochs.
+- Chose an appropriate data augmentation strategy.
 - Model Building & training on the augmented data.
+- Train the second model for ~20 epochs.
 - Model Building & training on the rectified class imbalance data.
+- Train the second model for ~30 epochs.
 
 ## Conclusions
 - Finding on the first base model
   - The model is not overfitting but accuracy is very small.
-- Finding from Second Model
+- Finding from second Model
   - There is no improvement in accuracy.
   - We can increase the epochs to increase the accuracy so it's too early for judgement.
-- Final findings on the rectified class imbalance data
+- Final finding on the rectified class imbalance data
   - Accuracy on training data has increased by using Augmentor library.
   - Losses on training data has decresed by using Augmentor library.
 
 ## Acknowledgements
-- Thank to Google Colab by using on GPU runtime.
+- Thank to Google Colab and GPU runtime.
