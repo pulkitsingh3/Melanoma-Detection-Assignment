@@ -24,12 +24,13 @@
 
 ## Conclusions
 - Finding on the first base model
-  - The model is overfitting because we can see difference in loss functions in training and validation.
-  - The difference in accuracy of training and validation data is large enough which showes overfitting of model.
+  - The model is not overfitting but accuracy is very small.
 - Finding from Second Model
-  - There is no improvement in accuracy but we can definitely see the overfitting problem has solved due to data augmentation.
+  - There is no improvement in accuracy.
   - We can increase the epochs to increase the accuracy so it's too early for judgement.
 - Final findings on the rectified class imbalance data
+  - Accuracy on training data has increased by using Augmentor library.
+  - Losses on training data has decresed by using Augmentor library.
 
 ## Acknowledgements
 - Thank to Google Colab by using on GPU runtime.
