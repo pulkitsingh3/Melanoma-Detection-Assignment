@@ -1,6 +1,4 @@
-# Project Name
-> Outline a brief description of your project.
-
+# Melanoma-Detection-Assignment
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -11,42 +9,27 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+- Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths.
+- A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+- The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). 
+- All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Build a multiclass classification model using a custom convolutional neural network in TensorFlow. 
+- Create train & validation dataset from the train directory with a batch size of 32. Also, make sure you resize your images to 180*180.
+- Train the model for ~20 epochs.
+- Chose an appropriate data augmentation strategy to resolve underfitting/overfitting.
+- Model Building & training on the augmented data.
+- Model Building & training on the rectified class imbalance data.
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+## Conclusions
+- Finding on the first base model
+  - The model is overfitting because we can see difference in loss functions in training and validation.
+  - The difference in accuracy of training and validation data is large enough which showes overfitting of model.
+- Finding from Second Model
+  - There is no improvement in accuracy but we can definitely see the overfitting problem has solved due to data augmentation.
+  - We can increase the epochs to increase the accuracy so it's too early for judgement.
+- Final findings on the rectified class imbalance data
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+- Thank to Google Colab by using on GPU runtime.
